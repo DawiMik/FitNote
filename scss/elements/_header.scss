@@ -1,0 +1,26 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+@import "../settings/mixins";
+
+.logo {
+  display: flex;
+
+  @include for-phone-only {
+    width: 100vw;
+    justify-content: center;
+
+    .logo_part_one {
+      font-size: 4em;
+      font-family: $font_logo_one;
+      color: $color-primary;
+      padding: 0 0.1em;
+    }
+    .logo_part_two {
+      font-size: 4em;
+      font-family: $font_logo_two;
+      color: $color-primary;
+      padding: 0 0.1em;
+    }
+  }
+  }
+

@@ -1,0 +1,40 @@
+@import "generic/reset";
+
+@import "settings";
+
+@import "elements/base";
+@import "elements/buttons";
+@import "elements/header";
+@import "elements/benefits";
+@import "elements/contact";
+@import "elements/form";
+@import "elements/footer";
+@import "elements/menu";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 80vh;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  border-radius:50px;
+  -moz-border-radius:50px;
+  -webkit-border-radius:50px;
+  -webkit-box-shadow:0px 0px 42px 0px #393a3c ;
+  -moz-box-shadow:0px 0px 42px 0px #393a3c ;
+  box-shadow:0px 0px 42px 0px #393a3c ;
+}
+.hide {
+  display: none;
+}
+.components {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
