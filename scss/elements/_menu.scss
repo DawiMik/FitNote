@@ -73,3 +73,116 @@
 .menu__item:hover {
   background-color: #CFD8DC;
 }
+
+.goals_menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu_title_one {
+  font-size: 2em;
+  font-family: $font_logo_one;
+  color: $color-primary;
+  padding: 0 0.1em;
+}
+.menu_title_two {
+  font-size: 2em;
+  font-family: $font_logo_two;
+  color: $color-primary;
+  padding: 0 0.1em;
+}
+.main_title {
+  fonts-size: 1.5em;
+  font-family: $font_logo_two;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .weight_score {
+    font-size: 2.5em;
+    padding: 1em 0;
+    color: $color-primary;
+  }
+  input {
+    margin: 1em 0;
+  }
+  .input_goal {
+    font-family: $font_logo_two;
+    font-size: 0.7em;
+    font-style: italic;
+    width: 14.5em;
+    height: 6em;
+    color: $color-grey;
+    border: 1.6px solid $color-light-grey;
+    border-radius: 40px;
+    box-shadow: 0 4px 15px 0 $color-primary-shadow;
+    text-align: center;
+  }
+
+}
+.goals_item {
+  fonts-size: 0.9em;
+  font-family: $font_logo_two;
+}
+.new_goal {
+  z-index: 2;
+  position: absolute;
+  top: 10em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 90vw;
+  background-color: white;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -webkit-box-shadow: 0px 0px 42px 0px #393a3c;
+  -moz-box-shadow: 0px 0px 42px 0px #393a3c;
+  box-shadow: 0px 0px 42px 0px #393a3c;
+}
+
+.new_goal_input {
+  width: 20em;
+  height: 2.5em;
+  font-family: $font_logo_two;
+  font-size: 0.7em;
+  font-style: italic;
+  color: $color-grey;
+  border: 1.6px solid $color-light-grey;
+  border-radius: 40px;
+  box-shadow: 0 4px 15px 0 $color-primary-shadow;
+  text-align: center;
+}
+
+.new_goals {
+  height: 100%;
+  font-family: $font_logo_two;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  .logo {
+    * {
+      margin: 0.5em 0;
+    }
+  }
+  .weight_score {
+    font-size: 2em;
+    padding: 1em 0;
+    color: $color-primary;
+  }
+  padding: 0.3em;
+  .set_new_goal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    * {
+      margin: 2em auto;
+    }
+  }
+}

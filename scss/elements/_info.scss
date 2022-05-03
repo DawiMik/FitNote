@@ -1,0 +1,34 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+@import "../settings/mixins";
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .info_weight {
+    margin: 2em auto;
+
+    .weight_current {
+      font-size: 1.3em;
+      font-family: $font_logo_two;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1em auto;
+
+      .weight_current_score {
+        margin: 1em auto;
+        font-size: 1.4em;
+        color: $color-primary;
+      }
+    }
+
+    .weight_score {
+      font-size: 1.5em;
+      padding: 0.3em 0;
+    }
+  }
+}

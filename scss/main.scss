@@ -2,7 +2,7 @@
 
 @import "settings";
 
-@import "elements/base";
+@import "elements/info";
 @import "elements/buttons";
 @import "elements/header";
 @import "elements/benefits";
@@ -11,14 +11,33 @@
 @import "elements/footer";
 @import "elements/menu";
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+  -moz-appearance:textfield; /* Firefox */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 4em;
   width: 80vw;
   height: 80vh;
   background-color: white;
-  position: relative;
   z-index: 1;
   border-radius:50px;
   -moz-border-radius:50px;
@@ -30,6 +49,13 @@
 .hide {
   display: none;
 }
+.hide_sub {
+  display: none;
+}
+.hide_goal {
+  display: none;
+}
+
 .components {
   width: 100vw;
   display: flex;
@@ -38,3 +64,4 @@
 
 
 }
+
